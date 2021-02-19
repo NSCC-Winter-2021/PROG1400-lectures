@@ -15,17 +15,20 @@ public class WednesdayChallenge {
         // loop between the two entered numbers
         //System.out.println("You typed: " + num1 + " and " + num2);
         for (int i = num1; i <= num2; i++) {
-            System.out.println(i + ": ");
+            System.out.print(i + ": ");
+            // for each number in the loop
+            // do another loop that starts at 1 and ends at that number
+            // ex. 10 should loop between 1 and 10
+            for (int j = 1; j <= i; j++) {
+
+                // divide the number by each number in the loop
+                // use modulus division to see it is evenly divisible
+                if (i % j == 0) {
+                    // if evenly divisible, print out the number
+                    System.out.print(j + " ");
+                }
+            }
+            System.out.println();
         }
-
-        // for each number in the loop
-        // do another loop that starts at 1 and ends at that number
-        // ex. 10 should loop between 1 and 10
-
-        // divide the number by each number in the loop
-        // use modulus division to see it is evenly divisible
-
-        // if evenly divisible, print out the number
-
     }
 }
