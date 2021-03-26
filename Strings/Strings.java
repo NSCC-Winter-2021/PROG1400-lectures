@@ -18,7 +18,13 @@ public class Strings {
         System.out.println("Char: " + str2.charAt(6));
 
         double money = 123.45678;
-        String moneyString = String.format("USD: $%.2f, $%.3f", money, money);
+        String moneyString = String.format("" +
+                "USD: $%.2f, $%.3f", money, money);
         System.out.println(moneyString);
+
+        System.out.printf("Money: %.2f\n", money);
+
+        String str = "My First String";
+        String copiedStr = str;
     }
 }

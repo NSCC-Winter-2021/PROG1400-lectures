@@ -1,7 +1,7 @@
 package BestPractices;
 
 // 1. When accessing data *outside* of a class, use getters and setters.
-// 2. Most "member variables" should be declared private.
+// 2. Most "member variables" should be declared private or protected.
 // 3. Put member variables at the top of the class, functions at the bottom.
 // 4. Arrange the getters/setters in the same order as the member variables.
 // 5. You only need to add the getters/setters you are using.
@@ -54,6 +54,8 @@ public class BestPractices {
         todaysWeather.setCloudCoverage(Weather.ColorOfTheSky);
 
         Weather tomorrowsWeather = new Weather(10.0);
+
+
 
     }
 
